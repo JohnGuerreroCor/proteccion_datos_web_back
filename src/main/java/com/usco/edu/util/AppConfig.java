@@ -42,9 +42,9 @@ public class AppConfig {
 
 			dataSource = (DataSource) new JndiTemplate().lookup("jboss/datasources/LoginDS");
 
-		} else if (perfilSeleccionado.equals("test") || perfilSeleccionado.equals("produccion")) {
+		} else if (perfilSeleccionado.equals("pruebas") || perfilSeleccionado.equals("produccion")) {
 
-			dataSource = (DataSource) new JndiTemplate().lookup("java:jboss/datasources/DatasourceLogueoCreadoPorDBA");
+			dataSource = (DataSource) new JndiTemplate().lookup("java:jboss/datasources/ProteccionDatosWebLoginDS");
 
 		}
 		JdbcTemplate jdbcTemplate = new JdbcTemplate();
@@ -62,9 +62,9 @@ public class AppConfig {
 
 			dataSource = (DataSource) new JndiTemplate().lookup("jboss/datasources/EjecucionDS");
 
-		} else if (perfilSeleccionado.equals("test") || perfilSeleccionado.equals("produccion")) {
+		} else if (perfilSeleccionado.equals("pruebas") || perfilSeleccionado.equals("produccion")) {
 
-			dataSource = (DataSource) new JndiTemplate().lookup("java:jboss/datasources/DatasourceEjecucionCreadoPorDBA");
+			dataSource = (DataSource) new JndiTemplate().lookup("java:jboss/datasources/ProteccionDatosWebEjecucionDS");
 
 		}
 		JdbcTemplate jdbcTemplate = new JdbcTemplate();

@@ -9,15 +9,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Autorizacion {
 	
-	private int codigo;
+	private Integer codigo;
+	private String titulo;
+	private Integer normativaCodigo;
+	private String normativaNumero;
+	private String normativaTipoNombre;
+	private Date normativaFechaCreacion;
+	private String version;
+	private String descripcion;
 	private Date fechaCreacion;
-	private int personaCodigo;
-	private int terceroCodigo;
-	private int moduloCodigo;
-	private int terminoCondicionCodigo;
-	private int uid;
-	private String ip;
-	private String host;
-	private String sessionId;
-	
+	private Integer anexo;
+	private Integer estado;
+
 }

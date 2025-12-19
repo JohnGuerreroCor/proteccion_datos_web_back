@@ -1,0 +1,16 @@
+package com.usco.edu.service;
+
+import java.util.List;
+
+import com.usco.edu.entities.Seccion;
+import com.usco.edu.entities.SeccionTipo;
+
+public interface ISeccionService {
+
+	public List<Seccion> obtenerListadoSeccion();
+
+	public List<SeccionTipo> obtenerListadoSeccionTipo();
+
+	public Seccion obtenerSeccion(Integer codigo);
+
+}

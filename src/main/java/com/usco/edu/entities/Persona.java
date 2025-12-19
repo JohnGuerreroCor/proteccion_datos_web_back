@@ -1,5 +1,7 @@
 package com.usco.edu.entities;
 
+import java.sql.Date;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -7,11 +9,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Persona {
 
-    
-    private Long codigo;
-    private String nombre;
-    private String apellido;
-    private String identificacion;
-    private String emailInterno;
-    
+	private Integer codigo;
+	private String nombre;
+	private String apellido;
+	private String identificacion;
+	private String genero;
+	private Date fechaNacimiento;
+	private String emailInterno;
+	private String emailPersonal;
+
 }
